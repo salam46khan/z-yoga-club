@@ -1,0 +1,7 @@
+.myHero{
+    background: linear-gradient(60deg, #000000f8 , #000000c9), url('../../assets/img/hero.jpg');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}

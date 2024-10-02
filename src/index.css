@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: mainTitleFont;
+    src: url('./assets/font/FonartoBold-RpYOo.ttf');
+}
+@font-face {
+    font-family: narmalFont;
+    src: url('./assets/font/AgenorNeue-Regular.otf');
+}
+@font-face {
+    font-family: paraFont;
+    src: url('./assets/font/EagleLight.otf');
+}
+
+.myTitle{
+    font-family: mainTitleFont;
+    
+}
+.mySub{
+    font-family: narmalFont;
+}
+.myFont{
+    font-family: paraFont;
+}
+.letter-spacing{
+    letter-spacing: 5px;
+}
+

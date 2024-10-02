@@ -1,0 +1,22 @@
+.about-pic{
+    height:auto;
+    background: url('../../assets//img/aboutpic.jpg'), url('../../assets//img/fastBL.png');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: screen;
+    width: 100%;
+}
+
+.about-card{
+    padding: 10px;
+    box-shadow: 0px 0px 10px #00000005;
+    border-radius: 10px;
+}
+.about-card .icon{
+    height: 70px;
+    width: 70px;
+    background: #97ff4150;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
