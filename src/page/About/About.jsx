@@ -9,11 +9,11 @@ import { MdOutlineEmojiEvents } from 'react-icons/md';
 
 const About = () => {
     return (
-        <div id='about'>
+        <div className='py-10 md:py-14' id='about'>
             <div className="container flex flex-col md:flex-row justify-between items-center py-10 md:py-20 ">
                 <div className='w-full md:w-1/2 p-3 md:p-6'>
-                    <p className='font-extrabold tracking-wide mySub letter-spacing'>ABOUT US</p>
-                    <h4 className='myTitle text-2xl md:text-4xl py-2 font-extrabold'>Your Sanctuary for <span className='text-primaryColor'>
+                    <p className='font-extrabold tracking-wide mySub letter-spacing text-xl'>ABOUT US</p>
+                    <h4 className='myTitle text-2xl md:text-4xl py-4 font-extrabold'>Your Sanctuary for <span className='text-primaryColor'>
                         Mind and <br /> Body</span> Wellness</h4>
                     <p className='w-full max-w-lg'>
                         At Z-Yoga Club, we believe that yoga is a journey towards holistic well-being. Our welcoming community offers a variety of classes for all levels, led by experienced instructors who are passionate about guiding you. Join us to enhance your practice, find your balance, and connect with like-minded individuals.
