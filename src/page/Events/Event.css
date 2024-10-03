@@ -1,0 +1,9 @@
+.event-pic{
+    background:url('../../assets/img/3.png'), url('../../assets/img/evnt.jpeg');
+    width: 100%;
+    background-blend-mode: screen;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}

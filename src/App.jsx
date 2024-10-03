@@ -4,6 +4,7 @@ import About from './page/About/About';
 import Why from './page/Why/Why';
 import Membership from './page/Membership/Membership';
 import Class from './page/Class/Class';
+import Event from './page/Events/Event';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Why></Why>
       <Membership></Membership>
       <Class></Class>
+      <Event></Event>
     </div>
   );
 };
