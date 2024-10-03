@@ -1,0 +1,20 @@
+.Class-time {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    text-align: center;
+    border: 2px solid; 
+    padding: 20px 10px; 
+    border-image-source: linear-gradient( #a9d303 30%, transparent);
+    border-image-slice: 1;
+    background: #00000009;
+}
+
+.Class-time .icon {
+    height: 60px;
+    width: 60px;
+    background: #a9d30330;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
