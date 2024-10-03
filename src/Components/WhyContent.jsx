@@ -14,8 +14,8 @@ const WhyContent = () => {
 
 
             {/* top fast  */}
-            <div className="lg:py-8 p-3 flex items-center lg:justify-end">
-                <div className="why-card w-full lg:w-5/6 p-3">
+            <div className="lg:py-8 py-3 flex items-center lg:justify-end">
+                <div className="why-card w-full lg:w-4/6 p-3">
                     <div className="flex items-end gap-2">
                         <div className="h-12 w-12 bg-[#97ff4150] flex justify-center items-center">
                             <GiStrong className="text-4xl text-primaryColor" />
@@ -23,7 +23,7 @@ const WhyContent = () => {
                         <p className="mySub text-xl">Flexibility and Strength</p>
                     </div>
                     <p className="text-xs mt-2">
-                        Experience improved flexibility and build strength through diverse yoga practices tailored to all levels.
+                        Experience improved flexibility and build strength through diverse yoga practices tailored to all levels here.
                     </p>
                 </div>
             </div>
@@ -32,8 +32,8 @@ const WhyContent = () => {
             <div className=" hidden lg:block "></div>
 
             {/* top last  */}
-            <div className="lg:py-8 p-3 flex items-center">
-                <div className="why-card w-full lg:w-5/6 p-3">
+            <div className="lg:py-8 py-3 flex items-center">
+                <div className="why-card w-full lg:w-4/6 p-3">
                     <div className="flex items-end gap-2">
                         <div className="h-12 w-12 bg-[#97ff4150] flex justify-center items-center">
                             <PiMaskSadFill className="text-4xl text-primaryColor" />
@@ -49,13 +49,13 @@ const WhyContent = () => {
 
 
             {/* middle fast */}
-            <div className="lg:py-8 p-3 lg:justify-center flex items-center">
-                <div className="why-card w-full lg:w-5/6 p-3">
+            <div className="lg:py-8 py-3 flex items-center">
+                <div className="why-card w-full lg:w-4/6 p-3">
                     <div className="flex items-end gap-2">
                         <div className="h-12 w-12 bg-[#97ff4150] flex justify-center items-center">
                             <PiUsersThreeFill className="text-4xl text-primaryColor" />
                         </div>
-                        <p className="mySub text-xl">Community Connection</p>
+                        <p className="mySub text-xl">Foster Community Connection</p>
                     </div>
                     <p className="text-xs mt-2">
                         Join a supportive network of like-minded individuals who inspire and motivate each other on their wellness journeys.
@@ -68,13 +68,13 @@ const WhyContent = () => {
             <div className=" hidden lg:block"></div>
 
             {/* middle last  */}
-            <div className="lg:py-8 p-3 flex items-center lg:justify-center">
-                <div className="why-card w-full lg:w-5/6 p-3">
+            <div className="lg:py-8 py-3 flex items-center lg:justify-end">
+                <div className="why-card w-full lg:w-4/6 p-3">
                     <div className="flex items-end gap-2">
                         <div className="h-12 w-12 bg-[#97ff4150] flex justify-center items-center">
                             <IoBook className="text-4xl text-primaryColor" />
                         </div>
-                        <p className="mySub text-xl">Expert Guidance</p>
+                        <p className="mySub text-xl">Supper Expert Guidance</p>
                     </div>
                     <p className="text-xs mt-2">
                         Benefit from experienced instructors who provide personalized attention and adjustments to enhance your practice.
@@ -89,8 +89,8 @@ const WhyContent = () => {
 
 
             {/* last item  */}
-            <div className=" p-3 flex justify-center items-center  ">
-                <div className="why-card w-full lg:w-5/6 p-3">
+            <div className=" py-3 flex justify-center items-center  ">
+                <div className="why-card w-full lg:w-4/6 p-3">
                     <div className="flex items-end gap-2">
                         <div className="h-12 w-12 bg-[#97ff4150] flex justify-center items-center">
                             <PiHandPeaceFill className="text-4xl text-primaryColor" />

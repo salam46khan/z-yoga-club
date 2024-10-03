@@ -5,3 +5,9 @@
     background-position: center;
     background-size: cover;
 }
+.side-text{
+    color: transparent;
+    -webkit-text-stroke: 1px #a9d3035b;
+    font-weight: 900;
+    letter-spacing: 8px;
+}
