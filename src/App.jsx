@@ -9,6 +9,7 @@ import Team from './page/Team/Team';
 import Testimonials from './page/Testimonials/Testimonials';
 import Practice from './page/Practice/Practice';
 import Faq from './page/FAQs/Faq';
+import Contact from './page/Contact/Contact';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       <Team></Team>
       <Practice></Practice>
       <Faq></Faq>
+      <Contact></Contact>
     </div>
   );
 };

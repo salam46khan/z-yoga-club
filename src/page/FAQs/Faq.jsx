@@ -10,7 +10,7 @@ const Faq = () => {
     }, [])
     return (
         <div className="p-3 py-10 md:py-20 bg-[#1b1919]">
-            <div className="container flex gap-4 justify-center items-center">
+            <div className="container flex flex-col md:flex-row gap-4 justify-center items-center">
                 <div className="w-full md:h-1/2">
                     <img className='w-full' src={faqPic} alt="" />
                 </div>

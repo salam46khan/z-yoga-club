@@ -1,0 +1,11 @@
+.contact-content{
+    background: linear-gradient(#000000c4, #000000c5), url('../../assets/img/contact.jpg');
+    background-size: cover;
+    background-position: top;
+}
+.contact-content .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a9d30330;
+}
