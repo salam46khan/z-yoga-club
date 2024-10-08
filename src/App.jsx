@@ -8,6 +8,7 @@ import Event from './page/Events/Event';
 import Team from './page/Team/Team';
 import Testimonials from './page/Testimonials/Testimonials';
 import Practice from './page/Practice/Practice';
+import Faq from './page/FAQs/Faq';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Testimonials></Testimonials>
       <Team></Team>
       <Practice></Practice>
+      <Faq></Faq>
     </div>
   );
 };
