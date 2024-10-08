@@ -6,6 +6,8 @@ import Membership from './page/Membership/Membership';
 import Class from './page/Class/Class';
 import Event from './page/Events/Event';
 import Team from './page/Team/Team';
+import Testimonials from './page/Testimonials/Testimonials';
+import Practice from './page/Practice/Practice';
 
 const App = () => {
   return (
@@ -16,7 +18,9 @@ const App = () => {
       <Membership></Membership>
       <Class></Class>
       <Event></Event>
+      <Testimonials></Testimonials>
       <Team></Team>
+      <Practice></Practice>
     </div>
   );
 };

@@ -42,17 +42,17 @@ const About = () => {
                 </div>
                 <div className='w-full md:w-1/2 p-3 md:p-5'>
                     <div className='grid grid-cols-3 gap-3 p-3 md:p-6'>
-                        <div className='bg bg-red-300 rounded-md overflow-hidden'>
-                            <img className='h-full w-full object-fill' src={img1} alt="" />
+                        <div className=' rounded-md overflow-hidden'>
+                            <img className='h-full w-full object-fill hover:scale-110 duration-300' src={img1} alt="" />
                         </div>
-                        <div className='bg bg-red-300 rounded-md overflow-hidden col-span-2 row-span-2'>
-                            <img className='h-full w-full object-fill' src={img2} alt="" />
+                        <div className='rounded-md overflow-hidden col-span-2 row-span-2'>
+                            <img className='h-full w-full object-fill hover:scale-110 duration-300' src={img2} alt="" />
                         </div>
-                        <div className='bg bg-red-300 rounded-md overflow-hidden row-span-2'>
-                            <img className='h-full w-full object-fill' src={img3} alt="" />
+                        <div className=' rounded-md overflow-hidden row-span-2'>
+                            <img className='h-full w-full object-fill hover:scale-110 duration-300' src={img3} alt="" />
                         </div>
-                        <div className='bg bg-red-300 col-span-2 rounded-md overflow-hidden '>
-                            <img className='h-full w-full object-fill' src={img4} alt="" />
+                        <div className=' col-span-2 rounded-md overflow-hidden '>
+                            <img className='h-full w-full object-fill hover:scale-110 duration-300' src={img4} alt="" />
                         </div>
                     </div>
                 </div>

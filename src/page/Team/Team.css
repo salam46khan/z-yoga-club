@@ -1,8 +1,8 @@
 .team-card{
     box-shadow: 0px 0px 5px #000000b4;
     width: 100%;
-    max-width: 260px;
-    height: 380px;
+    max-width: 280px;
+    height: 400px;
     border-radius: 14px;
     position: relative;
     overflow: hidden;
@@ -10,8 +10,8 @@
 }
 
 .team-content{
-    padding: 100px 15px 15px;
-    background: linear-gradient(#0000, #000e);
+    padding: 140px 15px 20px;
+    background: linear-gradient(#0000, #000000fa);
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -20,7 +20,7 @@
     transition: 0.4s;
 }
 .team-card:hover .team-content{
-    transform: translateY(0);
+    transform: translateY(1px);
 }
 .team-card:hover{
     box-shadow: 0px 0px 20px #000000f5;

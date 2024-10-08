@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Saba Hussain",
+        "comment": "Joining Z-Yoga Club has truly transformed my life. I’ve gained not just physical strength but also mental clarity. The instructors are so patient and encouraging, and the community here is incredibly supportive. I leave every class feeling rejuvenated and at peace.",
+        "imgUrl": "https://i.ibb.co.com/q9ycNCD/woman-4.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Ahmed Rafi",
+        "comment": "I had never done yoga before joining Z-Yoga Club, but from the very first class, I felt comfortable and supported. The instructors make sure everyone is at ease, and the beginner-friendly classes are perfect for building confidence. Now I feel more balanced, both mentally and physically.",
+        "imgUrl": "https://i.ibb.co.com/X3bvvtX/man-2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Farzana Malik",
+        "comment": "Z-Yoga Club is more than just a yoga center. It’s a complete wellness experience. The workshops, the personalized coaching, and the mindfulness practices have helped me integrate wellness into all areas of my life. I feel healthier and more grounded thanks to this wonderful place.",
+        "imgUrl": "https://i.ibb.co.com/cDztbwV/women-2.png"
+    },
+    {
+        "id": 4,
+        "name": "Nazmul Islam",
+        "comment": "The sense of community at Z-Yoga Club is amazing. The instructors are knowledgeable, and the atmosphere is so positive. The group classes and events have motivated me to stay consistent with my wellness journey, and I’ve met so many wonderful people along the way.",
+        "imgUrl": "https://i.ibb.co.com/8YVT1q5/man-3.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Rumi Afroz",
+        "comment": "After attending the Stress Relief Workshop, I’ve learned practical techniques that have greatly reduced my stress levels. The yoga sessions and mindfulness practices at Z-Yoga Club have become a regular part of my routine, and I always leave feeling refreshed and calm.",
+        "imgUrl": "https://i.ibb.co.com/HqHr69p/woman-3.png"
+    },
+    {
+        "id": 6,
+        "name": "Aliya Khan",
+        "comment": "I’ve been practicing yoga for years, but Z-Yoga Club has taken my practice to a new level. The advanced classes are challenging yet rewarding, and the instructors always provide guidance for deeper understanding. I love the variety of sessions offered.",
+        "imgUrl": "https://i.ibb.co.com/yfYkSbP/women-1.webp"
+    },
+    {
+        "id": 7,
+        "name": "Faisal Rahman",
+        "comment": "Z-Yoga Club has helped me develop a consistent yoga practice. The flexible class schedule fits my busy lifestyle, and I’ve noticed significant improvements in my flexibility and posture. It’s the perfect place for anyone looking to start or deepen their yoga journey.",
+        "imgUrl": "https://i.ibb.co.com/cvxpjLb/man-1.jpg"
+    }
+]

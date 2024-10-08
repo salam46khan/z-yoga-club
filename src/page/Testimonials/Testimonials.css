@@ -1,0 +1,18 @@
+#testimonial {
+    background: linear-gradient(#000d, #1b1919), url('../../assets/img/testimonial.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.test-item {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px #0005;
+    color: #fff;
+    background: #fff1;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.swiper-button-prev::after , .swiper-button-next::after{
+    color: #a9d303;
+}
