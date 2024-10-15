@@ -10,6 +10,7 @@ import Testimonials from './page/Testimonials/Testimonials';
 import Practice from './page/Practice/Practice';
 import Faq from './page/FAQs/Faq';
 import Contact from './page/Contact/Contact';
+import Footer from './page/Footer/Footer';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       <Practice></Practice>
       <Faq></Faq>
       <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 };

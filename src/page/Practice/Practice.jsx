@@ -13,7 +13,7 @@ const Practice = () => {
                 <div className='w-full md:w-2/5'>
                     <p className='font-extrabold tracking-wide mySub text-xl letter-spacing '>Practice & Flow</p>
                     <h4 className='myTitle text-2xl md:text-4xl py-4 font-extrabold'>
-                        Experience Yoga <span className='text-primaryColor'>Anytime, <br /> Anywhere</span>
+                        Experience Yoga <span className='text-[#519700]'>Anytime, <br /> Anywhere</span>
                     </h4>
                     <p className='py-5 text-gray-600 w-full md:w-[75%]'>
                         At Z-Yoga Club, we believe that yoga is a journey, and we're here to support you every step of the way. With our Practice & Flow video series, you can experience the benefits of yoga from the comfort of your own home. Whether you're looking to improve your flexibility, strengthen your body, or find peace of mind, these videos are designed to guide you through your practice.

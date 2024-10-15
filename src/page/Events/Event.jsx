@@ -15,7 +15,7 @@ const Event = () => {
                     <div className='w-full py-8'>
                         <p className='font-extrabold tracking-wide mySub letter-spacing text-xl'>Events & Workshops</p>
                         <h4 className='myTitle text-2xl md:text-4xl py-4 font-extrabold'>
-                            Join Our Exclusive <span className='text-primaryColor'>Wellness <br /> Events and Workshops</span>
+                            Join Our Exclusive <span className='text-secondaryColor'>Wellness <br /> Events and Workshops</span>
                         </h4>
                     </div>
                     <div className='w-full md:w-1/2 text-center p-2 py-12 flex flex-col justify-center items-center'>
@@ -29,23 +29,23 @@ const Event = () => {
                             }
                         </div>
                     </div>
-                    <div className='w-full md:w-1/2 bg-[#a9d30350] text-center p-2 py-12 flex flex-col justify-center items-center'>
+                    <div className='w-full md:w-1/2 bg-[#a9d30340] text-center p-2 py-12 flex flex-col justify-center items-center'>
                         <div>
                             <h4 className='mySub text-2xl '>Weekend Yoga Retreat</h4>
                             <p className='text-xl py-4 text-gray-600'>November 14, 2024</p>
                         </div>
-                        <div className='myTitle text-3xl lg:text-4xl text-primaryColor'>
+                        <div className='myTitle text-3xl lg:text-4xl text-secondaryColor'>
                             {
                                 MindfulnessDate > 0 ? <Countdown date={WeekendDate} /> : <p>Day: Hour: Min: Sec</p>
                             }
                         </div>
                     </div>
-                    <div className='w-full md:w-1/2 bg-[#a9d30350] text-center p-2 py-12 flex flex-col justify-center items-center'>
+                    <div className='w-full md:w-1/2 bg-[#a9d30340] text-center p-2 py-12 flex flex-col justify-center items-center'>
                         <div>
                             <h4 className='mySub text-2xl '>Holistic Wellness Day</h4>
                             <p className='text-xl py-4 text-gray-600'>December 5, 2024</p>
                         </div>
-                        <div className='myTitle text-3xl lg:text-4xl text-primaryColor'>
+                        <div className='myTitle text-3xl lg:text-4xl text-secondaryColor'>
                             {
                                 MindfulnessDate > 0 ? <Countdown date={HolisticDate} /> : <p>Day: Hour: Min: Sec</p>
                             }

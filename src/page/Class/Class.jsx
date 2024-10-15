@@ -12,16 +12,16 @@ const Class = () => {
                 <div className='md:p-5 w-full md:w-1/2'>
                     <p className='font-extrabold tracking-wide mySub letter-spacing text-xl'>Classes & Schedule</p>
                     <h4 className='myTitle text-2xl md:text-4xl py-4 font-extrabold'>
-                        Flexible Class Timings to Fit <span className='text-primaryColor'>
+                        Flexible Class Timings to Fit <span className='text-secondaryColor'>
                             Your <br /> Daily Routine
                         </span>
                     </h4>
                     <div className='flex justify-start gap-5 pb-5 items-stretch'>
                         <div className="Class-time w-1/2 max-w-xs">
                             <div className='icon'>
-                                <PiSunHorizonBold className='text-5xl text-primaryColor' />
+                                <PiSunHorizonBold className='text-5xl text-secondaryColor' />
                             </div>
-                            <h4 className='text-primaryColor mt-2 py-2 text-xl mySub'>
+                            <h4 className='text-secondaryColor mt-2 py-2 text-xl mySub'>
                                 Morning Session
                             </h4>
                             <p className='font-extrabold'>
@@ -30,9 +30,9 @@ const Class = () => {
                         </div>
                         <div className="Class-time w-1/2 max-w-xs">
                             <div className='icon'>
-                                <BsCloudMoon className='text-5xl text-primaryColor' />
+                                <BsCloudMoon className='text-5xl text-secondaryColor' />
                             </div>
-                            <h4 className='text-primaryColor mt-2 py-2 text-xl mySub'>
+                            <h4 className='text-secondaryColor mt-2 py-2 text-xl mySub'>
                                 Evening Session
                             </h4>
                             <p className='font-extrabold'>
