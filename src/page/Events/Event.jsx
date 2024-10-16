@@ -8,7 +8,7 @@ const Event = () => {
     const HolisticDate = new Date('2024-12-05T08:00:00');
     const StressDate = new Date('2024-11-28T10:00:00');
     return (
-        <div id='event' className='py-10 md:py-20 p-3'>
+        <div id='events' className='py-10 md:py-20 p-3'>
             <div className="container flex flex-col md:flex-row justify-center items-stretch gap-5">
 
                 <div className='w-full md:w-1/2 flex flex-wrap justify-center items-center'>

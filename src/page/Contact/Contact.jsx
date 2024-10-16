@@ -7,7 +7,7 @@ import MyButton from '../../Components/MyButton';
 
 const Contact = () => {
     return (
-        <div className='py-10 md:py-20 p-3'>
+        <div id='contact' className='py-10 md:py-20 p-3'>
             <div className="container contact-content flex flex-col md:flex-row justify-center items-center">
                 <div className='w-full md:w-1/2 p-5 md:p-10'>
                     <div className='flex items-center gap-4 text-gray-400 py-5'>

@@ -4,7 +4,7 @@ import './Class.css'
 import { BsCloudMoon } from 'react-icons/bs';
 const Class = () => {
     return (
-        <div id="class" className="py-10 md:py-20 p-3">
+        <div id="schedule" className="py-10 md:py-20 p-3">
             <div className="container flex flex-col md:flex-row justify-center gap-5 items-center">
                 <div className="w-full md:w-1/2 flex justify-center items-center">
                     <img className='w-full md:w-[80%]' src={classPic} alt="" />
