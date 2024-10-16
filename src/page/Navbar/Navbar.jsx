@@ -33,7 +33,7 @@ const Navbar = () => {
     )
 
     return (
-        <div className="my-nav p-3 w-full  z-50 top-0 left-0 absolute ">
+        <div className="my-nav p-3 w-full  z-50">
             <div className="container flex justify-between items-center">
                 <div>
                     <div className="logo">

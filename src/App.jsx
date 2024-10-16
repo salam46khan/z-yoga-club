@@ -12,11 +12,12 @@ import Faq from './page/FAQs/Faq';
 import Contact from './page/Contact/Contact';
 import Footer from './page/Footer/Footer';
 import Navbar from './page/Navbar/Navbar';
+import Headroom from 'react-headroom';
 
 const App = () => {
   return (
     <div className='myFont relative overflow-hidden'>
-      <Navbar></Navbar>
+      
       <Hero></Hero>
       <About></About>
       <Why></Why>
