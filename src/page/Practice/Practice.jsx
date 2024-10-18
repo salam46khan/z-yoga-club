@@ -5,12 +5,20 @@ import { Rings } from 'react-loader-spinner';
 import { RxCross2 } from 'react-icons/rx';
 import pdfFile from '../../assets/pdf/z-yego club.pdf'
 import MyButton from '../../Components/MyButton';
+import LocomotiveScroll from 'locomotive-scroll';
+import { useEffect } from 'react';
 
 const Practice = () => {
+    useEffect(() => {
+        scroll = new LocomotiveScroll({
+            smooth: true,
+        })
+
+    }, [])
     return (
-        <div className='py-10 md:py-20 p-3'>
-            <div className="container flex flex-col md:flex-row gap-2 items-center">
-                <div className='w-full md:w-2/5'>
+        <div className='py-14 md:py-20 p-3 overflow-hidden' data-scroll-container>
+            <div className="container flex gap-y-10 flex-col md:flex-row gap-2 items-center" data-scroll-scetion>
+                <div className='w-full md:w-2/5 py-4' data-scroll data-scroll-speed="-0.05" >
                     <p className='font-extrabold tracking-wide mySub text-xl letter-spacing '>Practice & Flow</p>
                     <h4 className='myTitle text-2xl md:text-4xl py-4 font-extrabold'>
                         Experience Yoga <span className='text-[#519700]'>Anytime, <br /> Anywhere</span>
@@ -25,9 +33,9 @@ const Practice = () => {
                         </a>
                     </div>
                 </div>
-                <div className='w-full md:w-3/5'>
-                    <div className='relative border rounded-xl overflow-hidden'>
-                        <img className='w-full' src={vidPic} alt="" />
+                <div className='w-full md:w-3/5 py-5'>
+                    <div className='relative border rounded-xl overflow-hidden' data-scroll data-scroll-speed="0.1" >
+                        <img className='w-full h-[120%] object-cover' src={vidPic} alt="" />
                         <div className='absolute top-0 left-0 h-full w-full bg-[#000000b7] flex justify-center items-center'>
                             {/* <button className=' vid-btn'>
 

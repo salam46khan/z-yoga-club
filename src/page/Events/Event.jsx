@@ -1,5 +1,7 @@
 import Countdown from 'react-countdown';
 import './Event.css'
+import LocomotiveScroll from 'locomotive-scroll';
+import { useEffect } from 'react';
 
 const Event = () => {
     // const MindfulnessDate = new Date('2024-10-6T00:00:00'); 
@@ -7,12 +9,19 @@ const Event = () => {
     const WeekendDate = new Date('2024-11-14T00:10:00');
     const HolisticDate = new Date('2024-12-05T08:00:00');
     const StressDate = new Date('2024-11-28T10:00:00');
-    return (
-        <div id='events' className='py-10 md:py-20 p-3'>
-            <div className="container flex flex-col md:flex-row justify-center items-stretch gap-5">
 
-                <div className='w-full md:w-1/2 flex flex-wrap justify-center items-center'>
-                    <div className='w-full py-8'>
+    useEffect(() => {
+        scroll = new LocomotiveScroll({
+            smooth: true,
+        })
+
+    }, [])
+    return (
+        <div id='events' className='py-10 md:py-32 overflow-hidden p-3' data-scroll-container>
+            <div className="container flex flex-col md:flex-row justify-center items-stretch gap-5" data-scroll-section>
+
+                <div className='w-full md:w-1/2 flex flex-wrap justify-center items-center gap-3 md:gap-0' data-scroll-section>
+                    <div className='w-full py-8' data-scroll data-scroll-speed="-0.05">
                         <p className='font-extrabold tracking-wide mySub letter-spacing text-xl'>Events & Workshops</p>
                         <h4 className='myTitle text-2xl md:text-4xl py-4 font-extrabold'>
                             Join Our Exclusive <span className='text-secondaryColor'>Wellness <br /> Events and Workshops</span>
@@ -63,7 +72,7 @@ const Event = () => {
                         </div>
                     </div>
                 </div>
-                <div className='event-pic w-full md:w-1/2 min-h-80'></div>
+                <div className='event-pic w-full md:w-1/2 min-h-80' data-scroll data-scroll-speed="-0.15"></div>
             </div>
         </div>
     );

@@ -17,14 +17,14 @@ const Footer = () => {
                     <div className='w-full md:w-1/2 flex flex-col md:flex-row'>
                         <div className='w-full md:w-1/2'>
                             <p className='font-bold text-slate-900 mySub'>Quick Links</p>
-                            <ul className='space-y-2 pt-4'>
+                            <ol className='space-y-2 pt-4'>
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#">Classes & Schedule</a></li>
                                 <li><a href="#">Membership & Plans</a></li>
                                 <li><a href="#">Events & Workshops</a></li>
                                 <li><a href="#">Contact Us</a></li>
-                            </ul>
+                            </ol>
                         </div>
                         <div className='w-full md:w-1/2'>
                             <p className='font-bold text-slate-900 mySub'>Contact Information</p>

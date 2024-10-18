@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import img1 from '../../assets/img/img1.jpg'
 import img2 from '../../assets/img/img2.jpg'
 import img3 from '../../assets/img/img3.jpg'
@@ -6,11 +6,20 @@ import img4 from '../../assets/img/img4.jpg'
 import './About.css'
 import { GrYoga } from 'react-icons/gr';
 import { MdOutlineEmojiEvents } from 'react-icons/md';
+import LocomotiveScroll from 'locomotive-scroll';
 
 const About = () => {
+
+    useEffect(() => {
+        scroll = new LocomotiveScroll({
+            smooth: true,
+        })
+
+    }, [])
+
     return (
-        <div className='py-10 md:py-14' id='about'>
-            <div className="container flex flex-col md:flex-row justify-between items-center py-10 md:py-20 ">
+        <div className='py-10 md:py-24 overflow-hidden' id='about' data-scroll-container>
+            <div className="container flex flex-col md:flex-row justify-between items-center py-10 md:py-20 gap-y-5" data-scroll-section>
                 <div className='w-full md:w-1/2 p-3 md:p-6'>
                     <p className='font-extrabold tracking-wide mySub letter-spacing text-xl'>ABOUT US</p>
                     <h4 className='myTitle text-2xl md:text-4xl py-4 font-extrabold'>Your Sanctuary for <span className='text-secondaryColor'>
@@ -40,7 +49,7 @@ const About = () => {
 
                     </div>
                 </div>
-                <div className='w-full md:w-1/2 p-3 md:p-5'>
+                <div className='w-full md:w-1/2 p-3 md:p-5' data-scroll data-scroll-speed="-0.2">
                     <div className='grid grid-cols-3 gap-3 p-3 md:p-6'>
                         <div className=' rounded-md overflow-hidden'>
                             <img className='h-full w-full object-fill hover:scale-110 duration-300' src={img1} alt="" />

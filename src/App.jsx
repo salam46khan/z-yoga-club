@@ -13,6 +13,9 @@ import Contact from './page/Contact/Contact';
 import Footer from './page/Footer/Footer';
 import Navbar from './page/Navbar/Navbar';
 import Headroom from 'react-headroom';
+import LocomotiveScroll from 'locomotive-scroll';
+
+const locomotiveScroll = new LocomotiveScroll();
 
 const App = () => {
   return (

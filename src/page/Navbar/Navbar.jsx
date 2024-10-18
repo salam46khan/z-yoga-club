@@ -4,6 +4,7 @@ import gsap from 'gsap';
 import React, { useRef, useState } from 'react';
 import { useGSAP } from '@gsap/react';
 import pdfFile from '../../assets/pdf/z-yego club.pdf'
+import { Link } from 'react-scroll';
 
 
 const Navbar = () => {
@@ -36,21 +37,91 @@ const Navbar = () => {
         <div className="my-nav p-3 w-full  z-50">
             <div className="container flex justify-between items-center">
                 <div>
-                    <div className="logo">
-                        <a href="#">
+                    <div className="logo cursor-pointer">
+                        <Link to={"hero"}
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}>
                             <img className='h-12 w-12' src={logo} alt="" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className=''>
                     <div className='hidden md:block'>
                         <ul className='flex gap-2 items-center text-primaryColor'>
-                            <li><a className='nav-item' href="#">Home</a></li>
-                            <li><a className='nav-item' href="#about">About</a></li>
-                            <li><a className='nav-item' href="#choose">Fetcher</a></li>
-                            <li><a className='nav-item' href="#schedule">Schedule</a></li>
-                            <li><a className='nav-item' href="#events">Events</a></li>
-                            <li><a className='nav-item' href="#contact">Contact Us</a></li>
+                            <li>
+                                <Link
+                                    to={"hero"}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
+                                    duration={500}
+                                >
+                                    Home
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    activeClass="active"
+                                    to={"about"}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
+                                    duration={500}
+                                >
+                                    About
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    activeClass="active"
+                                    to={"choose"}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
+                                    duration={500}
+                                >
+                                    Feature
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    activeClass="active"
+                                    to={"schedule"}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
+                                    duration={500}
+                                >
+                                    Schedule
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    activeClass="active"
+                                    to={"events"}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
+                                    duration={500}
+                                >
+                                    Events
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    activeClass="active"
+                                    to={"contact"}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={0}
+                                    duration={500}
+                                >
+                                    Contact Us
+                                </Link>
+                            </li>
+
                             <li>
                                 <a className='inline-block hover:bg-opacity-100 duration-200 hover:text-black bg-primaryColor bg-opacity-20 py-2 px-4' href={pdfFile} download={pdfFile} target='_blank'>
                                     Download
@@ -89,12 +160,82 @@ const Navbar = () => {
                         </button>
                         <div className={`mob-nav-content absolute right-0 ease-in-out duration-500 top-16 translate-y-2 w-full z-50 ${navOpen ? 'translate-x-[100%] opacity-0' : "translate-x-0 opacity-100"}`}>
                             <ul className='flex flex-col gap-2 text-primaryColor'>
-                                <li><a className='nav-item' href="#">Home</a></li>
-                                <li><a className='nav-item' href="#about">About</a></li>
-                                <li><a className='nav-item' href="#choose">Fetcher</a></li>
-                                <li><a className='nav-item' href="#schedule">Schedule</a></li>
-                                <li><a className='nav-item' href="#events">Events</a></li>
-                                <li><a className='nav-item' href="#contact">Contact Us</a></li>
+                                <li>
+                                    <Link
+                                        to={"hero"}
+                                        spy={true}
+                                        smooth={true}
+                                        offset={0}
+                                        duration={500}
+                                        activeClass="active"
+                                    >
+                                        Home
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        activeClass="active"
+                                        to={"about"}
+                                        spy={true}
+                                        smooth={true}
+                                        offset={0}
+                                        duration={500}
+                                    >
+                                        About
+                                    </Link>
+                                </li>
+
+
+
+
+                                <li>
+                                    <Link
+                                        activeClass="active"
+                                        to={"choose"}
+                                        spy={true}
+                                        smooth={true}
+                                        offset={0}
+                                        duration={500}
+                                    >
+                                        Feature
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        activeClass="active"
+                                        to={"schedule"}
+                                        spy={true}
+                                        smooth={true}
+                                        offset={0}
+                                        duration={500}
+                                    >
+                                        Schedule
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        activeClass="active"
+                                        to={"events"}
+                                        spy={true}
+                                        smooth={true}
+                                        offset={0}
+                                        duration={500}
+                                    >
+                                        Events
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        activeClass="active"
+                                        to={"contact"}
+                                        spy={true}
+                                        smooth={true}
+                                        offset={0}
+                                        duration={500}
+                                    >
+                                        Contact Us
+                                    </Link>
+                                </li>
                                 <li>
                                     <a className='inline-block hover:bg-opacity-100 duration-200 hover:text-black bg-primaryColor bg-opacity-20 py-2 px-4' href={pdfFile} download={pdfFile} target='_blank'>
                                         Download

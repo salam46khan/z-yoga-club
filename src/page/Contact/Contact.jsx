@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { CiLocationOn } from 'react-icons/ci';
 import './Contact.css'
 import { FiPhone } from 'react-icons/fi';
 import { MdMailOutline } from 'react-icons/md';
 import MyButton from '../../Components/MyButton';
+import LocomotiveScroll from 'locomotive-scroll';
 
 const Contact = () => {
+    useEffect(() => {
+        scroll = new LocomotiveScroll({
+            smooth: true,
+        })
+
+    }, [])
     return (
-        <div id='contact' className='py-10 md:py-20 p-3'>
+        <div id='contact' className='py-10 md:py-20 p-3' data-scroll-container>
             <div className="container contact-content flex flex-col md:flex-row justify-center items-center">
-                <div className='w-full md:w-1/2 p-5 md:p-10'>
-                    <div className='flex items-center gap-4 text-gray-400 py-5'>
+                <div className='w-full md:w-1/2 p-5 md:p-10 py-20' data-scroll-section>
+                    <div className='flex items-center gap-4 text-gray-400 py-5' data-scroll data-scroll-speed="-0.05">
                         <div className='h-12 w-12 icon'>
                             <CiLocationOn className='text-3xl text-primaryColor' />
                         </div>
@@ -19,7 +26,7 @@ const Contact = () => {
                             <p>Kaliganj Upozila, Satkhira</p>
                         </div>
                     </div>
-                    <div className='flex items-center gap-4 text-gray-400 py-5'>
+                    <div className='flex items-center gap-4 text-gray-400 py-5' data-scroll data-scroll-speed="-0.05">
                         <div className='h-12 w-12 icon'>
                             <FiPhone className='text-3xl text-primaryColor' />
                         </div>
@@ -30,7 +37,7 @@ const Contact = () => {
                             <p>+8801771-393709</p>
                         </div>
                     </div>
-                    <div className='flex items-center gap-4 text-gray-400 py-5'>
+                    <div className='flex items-center gap-4 text-gray-400 py-5' data-scroll data-scroll-speed="-0.05">
                         <div className='h-12 w-12 icon'>
                             <MdMailOutline className='text-3xl text-primaryColor' />
                         </div>

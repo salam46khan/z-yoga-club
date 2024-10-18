@@ -3,12 +3,20 @@ import pdfFile from '../../assets/pdf/z-yego club.pdf'
 import { PiCrown } from 'react-icons/pi';
 import { TbCurrencyTaka } from 'react-icons/tb';
 import MyButton from '../../Components/MyButton';
+import LocomotiveScroll from 'locomotive-scroll';
+import { useEffect } from 'react';
 const Membership = () => {
-    return (
-        <div className="py-10 md:py-20 bg-[#1b1919]" id="membership">
-            <div className="container flex flex-col md:flex-row items-center gap-5">
+    useEffect(() => {
+        scroll = new LocomotiveScroll({
+            smooth: true,
+        })
 
-                <div className="w-full md:w-2/5 p-3">
+    }, [])
+    return (
+        <div className="py-10 md:py-20 bg-[#1b1919] overflow-hidden" id="membership" data-scroll-container>
+            <div className="container py-20 flex flex-col md:flex-row items-center gap-5" data-scroll-section>
+
+                <div className="w-full pt-5 md:w-2/5 p-3" data-scroll data-scroll-speed="-0.2">
                     <p className='font-extrabold tracking-wide mySub text-xl letter-spacing text-white'>Membership & Plans</p>
                     <h4 className='myTitle text-2xl md:text-4xl py-4 text-white font-extrabold'>
                         Tailored Membership Options for <span className='text-primaryColor'>Your Wellness</span>
@@ -25,10 +33,10 @@ const Membership = () => {
                 </div>
 
 
-                <div className="w-full md:w-3/5 p-3 md:p-10 flex flex-col md:flex-row justify-center gap-5 md:items-stretch items-center">
+                <div className="w-full md:w-3/5 p-3 md:p-10 flex flex-col md:flex-row justify-center gap-5 gap-y-10 md:py-10 pt-32 md:pt-0 md:items-stretch items-center" >
 
                     {/* card 1 */}
-                    <div className="member-card w-full max-w-md md:max-w-xs rounded-lg overflow-hidden">
+                    <div className="member-card w-full max-w-md md:max-w-xs rounded-lg overflow-hidden" data-scroll data-scroll-speed="0.01">
                         <div className='icon'>
                             <PiCrown className='text-primaryColor text-6xl' />
                         </div>
@@ -78,7 +86,7 @@ const Membership = () => {
                     </div>
 
                     {/* card 2 */}
-                    <div className="member-card w-full max-w-md md:max-w-xs rounded-lg overflow-hidden">
+                    <div className="member-card w-full max-w-md md:max-w-xs rounded-lg overflow-hidden" data-scroll data-scroll-speed="0.01">
                         <div className='icon'>
                             <PiCrown className='text-primaryColor text-6xl' />
                         </div>

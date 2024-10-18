@@ -2,12 +2,20 @@ import { PiSunHorizonBold } from 'react-icons/pi';
 import classPic from '../../assets/svg/Online calendar-amico.svg'
 import './Class.css'
 import { BsCloudMoon } from 'react-icons/bs';
+import { useEffect } from 'react';
+import LocomotiveScroll from 'locomotive-scroll';
 const Class = () => {
+    useEffect(() => {
+        scroll = new LocomotiveScroll({
+            smooth: true,
+        })
+
+    }, [])
     return (
-        <div id="schedule" className="py-10 md:py-20 p-3">
-            <div className="container flex flex-col md:flex-row justify-center gap-5 items-center">
-                <div className="w-full md:w-1/2 flex justify-center items-center">
-                    <img className='w-full md:w-[80%]' src={classPic} alt="" />
+        <div id="schedule" className="py-14 md:py-32 p-3 overflow-hidden" data-scroll-container>
+            <div className="container flex flex-col md:flex-row justify-center gap-5 gap-y-12 items-center" data-scroll-section>
+                <div className="w-full md:w-1/2 mb-16 md:mb-0 flex justify-center items-center">
+                    <img className='w-full md:w-[75%]' src={classPic} alt="" data-scroll data-scroll-speed='-0.15'/>
                 </div>
                 <div className='md:p-5 w-full md:w-1/2'>
                     <p className='font-extrabold tracking-wide mySub letter-spacing text-xl'>Classes & Schedule</p>
