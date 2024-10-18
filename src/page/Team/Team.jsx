@@ -8,7 +8,6 @@ const Team = () => {
         scroll = new LocomotiveScroll({
             smooth: true,
         })
-
     }, [])
     return (
         <div className='py-10 md:py-20 p-3 bg-[#1b1919] overflow-hidden' data-scroll-container>
