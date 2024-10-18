@@ -1,37 +1,51 @@
 import './Navbar.css'
 import logo from '../../assets/img/logo.png'
-import gsap from 'gsap';
 import React, { useRef, useState } from 'react';
-import { useGSAP } from '@gsap/react';
 import pdfFile from '../../assets/pdf/z-yego club.pdf'
 import { Link } from 'react-scroll';
 
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import gsap from 'gsap';
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Navbar = () => {
     const [navOpen, setNavOpen] = useState(false)
 
+    const container = useRef();
+    const tl = useRef();
 
-    const container = useRef()
-    const tl = useRef()
-    const toggleTimeline = () => {
-        tl.current.reversed(!tl.current.reversed())
+    const handleNav = () => {
+        setNavOpen(!navOpen)
     }
 
+   
+
+
+    // const container = useRef()
+    // const tl = useRef()
+    // const toggleTimeline = () => {
+    //     tl.current.reversed(!tl.current.reversed())
+    // }
+
     useGSAP(() => {
-        tl.current = gsap.timeline()
-            .from('.mob-nav', {
-                x: 100,
-                duration: 1,
-                opacity: 0
-            })
-            .from('.mob-nav ul li', {
+        gsap.timeline()
+            .from(".logo", {
+                scale: 0,
                 opacity: 0,
-                duration: 1,
-                stagger: 0.4
+                duration: 0.5
             })
-            .reverse()
-    }, { scope: container }
-    )
+            .from('ul li', {
+                y: -20,
+                opacity: 0,
+                duration: 0.8,
+                stagger: 0.3,
+            })
+
+    })
+
+
+
 
     return (
         <div className="my-nav p-3 w-full  z-50">
@@ -134,7 +148,7 @@ const Navbar = () => {
                     <div className='block md:hidden w-full' ref={container}>
 
 
-                        <button onClick={() => setNavOpen(!navOpen)} className="btn btn-circle bg-primaryColor bg-opacity-30 border-none text-primaryColor">
+                        <button onClick={handleNav} className="btn btn-circle bg-primaryColor bg-opacity-30 border-none text-primaryColor">
                             {
                                 navOpen ?
                                     <svg
@@ -158,7 +172,11 @@ const Navbar = () => {
 
                             }
                         </button>
-                        <div className={`mob-nav-content absolute right-0 ease-in-out duration-500 top-16 translate-y-2 w-full z-50 ${navOpen ? 'translate-x-[100%] opacity-0' : "translate-x-0 opacity-100"}`}>
+                        <div className={`mob-nav-content absolute right-0 ease-in-out duration-500 top-16 translate-y-2 w-full z-50 ${navOpen ? "translate-x-0 opacity-100" : 'translate-x-[100%] opacity-0'}`}>
+{/* 
+                        ${navOpen ? "translate-x-0 opacity-100" : 'translate-x-[100%] opacity-0'}
+                         
+                         */}
                             <ul className='flex flex-col gap-2 text-primaryColor'>
                                 <li>
                                     <Link

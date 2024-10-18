@@ -10,6 +10,7 @@ ul li a{
     font-weight: 600;
     letter-spacing: 2px;
     color: #509700;
+    cursor: pointer;
 }
 ul li a:hover{
     color: #a9d303;

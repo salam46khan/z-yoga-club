@@ -76,7 +76,7 @@ const Testimonials = () => {
 
                         {
                             comment.map(comment =>
-                                <SwiperSlide>
+                                <SwiperSlide key={comment.id}>
                                     <div className="test-item w-full">
                                         <BiSolidQuoteLeft className="text-6xl mx-auto mt-6 text-primaryColor" />
                                         <p className="text-center p-4 py-8">
